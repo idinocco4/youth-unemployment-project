@@ -3,10 +3,10 @@ const ctx = document.getElementById('unemploymentChart').getContext('2d');
 const unemploymentChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: [2000, 2005, 2010, 2015, 2020, 2024], // Replace with your actual years
+        labels: [2000, 2005, 2010, 2015, 2020, 2024], // Replace with actual years
         datasets: [{
             label: 'Youth Unemployment Rate (%)',
-            data: [12, 10, 18, 14, 16, 15], // Replace with your actual data
+            data: [12, 10, 18, 14, 16, 15], // Replace with actual data from CSV or dataset
             borderColor: 'rgba(0, 86, 179, 1)',
             backgroundColor: 'rgba(0, 86, 179, 0.2)',
             fill: true,
