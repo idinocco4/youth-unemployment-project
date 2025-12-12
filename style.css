@@ -13,6 +13,16 @@ header {
     padding: 2rem 1rem;
 }
 
+header nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
 section {
     padding: 2rem;
     margin: auto;
@@ -34,7 +44,6 @@ ul {
 
 a {
     color: #0056b3;
-    text-decoration: none;
 }
 
 a:hover {
