@@ -10,47 +10,74 @@
 <body>
     <header>
         <h1>Youth Unemployment Analysis</h1>
-        <p>Predictive Analytics Project</p>
+        <p>Predictive Analytics Project – ISOM 835</p>
+        <nav>
+            <a href="#data">Data</a> |
+            <a href="#analysis">Analysis</a> |
+            <a href="#visuals">Visualizations</a> |
+            <a href="#colabs">Notebooks</a> |
+            <a href="#report">Report</a>
+        </nav>
     </header>
 
-    <section>
-        <h2>Project Summary</h2>
-        <p>This project explores youth unemployment trends using historical data and predictive analytics models. The analysis includes data exploration, modeling, forecasting, and an interactive dashboard.</p>
+    <section id="data">
+        <h2>Dataset Overview</h2>
+        <p>This project uses the Youth Unemployment dataset, tracking the unemployment rate for individuals aged 15–24 over time, with additional socioeconomic indicators.</p>
+        <h3>Key Features:</h3>
+        <ul>
+            <li><strong>Year:</strong> Calendar year</li>
+            <li><strong>Youth Unemployment Rate:</strong> Annual unemployment rate (%)</li>
+            <li><strong>GDP Growth:</strong> Annual economic growth (%)</li>
+            <li><strong>Education Enrollment:</strong> Youth education enrollment (%)</li>
+        </ul>
+        <p>This dataset enables analysis of trends, correlations, and predictive modeling.</p>
     </section>
 
-    <section>
-        <h2>Data Visualization</h2>
+    <section id="analysis">
+        <h2>Exploratory Data Analysis (EDA)</h2>
+        <p>EDA was conducted to identify patterns and relationships. Key insights:</p>
+        <ul>
+            <li>Unemployment spikes during recessions (2008, 2020)</li>
+            <li>Negative correlation between GDP growth and youth unemployment</li>
+            <li>Higher education enrollment correlates with lower youth unemployment</li>
+        </ul>
+
+        <h2>Predictive Modeling</h2>
+        <p>Models implemented to forecast youth unemployment:</p>
+        <ul>
+            <li><strong>Linear Regression:</strong> Captures linear trends over time</li>
+            <li><strong>Random Forest Regressor:</strong> Captures nonlinear relationships, interpretable via feature importance</li>
+            <li><strong>XGBoost Regressor:</strong> High-performance gradient boosting for time-series forecasting</li>
+        </ul>
+
+        <p>Evaluation metrics included MAE, RMSE, and R² score. Random Forest achieved the best performance.</p>
+    </section>
+
+    <section id="visuals">
+        <h2>Visualizations</h2>
+        <p>The chart below shows youth unemployment trends over time:</p>
         <canvas id="unemploymentChart" width="800" height="400"></canvas>
+        <p>Additional visualizations explore correlations with GDP, education, and labor force participation.</p>
     </section>
 
-    <section>
-        <h2>Key Findings</h2>
-        <ul>
-            <li>Youth unemployment rises during economic downturns.</li>
-            <li>Random Forest and XGBoost models effectively forecast trends.</li>
-            <li>Socioeconomic factors strongly influence unemployment rates.</li>
-        </ul>
-    </section>
-
-    <section>
+    <section id="colabs">
         <h2>Google Colab Notebooks</h2>
-        <p>Access the project notebooks for data exploration, modeling, and interactive dashboards:</p>
         <ul>
-            <li><a href="https://colab.research.google.com/drive/17YwizrwDq2Tlp-Sl5J5NJVlnGo8QYRw2?usp=sharing" target="_blank">Statistical Modeling & Forecasting</a></li>
-            <li><a href="https://colab.research.google.com/drive/1FDedMcMRzmyz3cmcUJM1ZtzT_wnNK6FH?usp=sharing" target="_blank">Data Exploration and Cleaning</a></li>
-            <li><a href="https://colab.research.google.com/drive/19IXwBJNIVe9KvifvbISWh-2dLN_czIA6?usp=sharing" target="_blank">Global Trends Analysis</a></li>
-            <li><a href="https://colab.research.google.com/drive/1AZCj_lCgAyw-I6YkYn-WFR1QzvvRauU4?usp=sharing" target="_blank">Interactive Dashboard</a></li>
+            <li><a href="https://colab.research.google.com/drive/17YwizrwDq2Tlp-Sl5J5NJVlnGo8QYRw2?usp=sharing" target="_blank">Statistical Modeling & Forecasting</a> – Time series modeling and predictions</li>
+            <li><a href="https://colab.research.google.com/drive/1FDedMcMRzmyz3cmcUJM1ZtzT_wnNK6FH?usp=sharing" target="_blank">Data Exploration and Cleaning</a> – Preprocessing and cleaning</li>
+            <li><a href="https://colab.research.google.com/drive/19IXwBJNIVe9KvifvbISWh-2dLN_czIA6?usp=sharing" target="_blank">Global Trends Analysis</a> – Cross-country comparison</li>
+            <li><a href="https://colab.research.google.com/drive/1AZCj_lCgAyw-I6YkYn-WFR1QzvvRauU4?usp=sharing" target="_blank">Interactive Dashboard</a> – Filterable charts and dashboard</li>
         </ul>
     </section>
 
-    <section>
-        <h2>Project Report</h2>
+    <section id="report">
+        <h2>Final Project Report</h2>
         <p>Download the full project report here:</p>
         <a href="Final%20Report%202.pdf" target="_blank">Final Report 2.pdf</a>
     </section>
 
     <footer>
-        <p>Author: Your Name | ISOM 835 Project</p>
+        <p>Author: Your Name | ISOM 835 Project | GitHub Pages</p>
     </footer>
 
     <script src="script.js"></script>
